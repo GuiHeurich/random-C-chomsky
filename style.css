@@ -1,0 +1,25 @@
+@font-face {
+    font-family: font;
+    src: url(CooperHewitt-LightItalic.woff);
+}
+
+.main {
+    font-family: font;
+    background-image: url('background.JPG');
+}
+
+.title {
+    color: white;
+    font-family: font;
+    font-size: 48px;
+}
+
+.preface {
+    font-family: font;
+    font-size: 20px;
+}
+
+.chomsky {
+    font-family: font;
+    font-size: 18px
+}
