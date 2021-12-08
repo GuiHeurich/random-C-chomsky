@@ -1,25 +1,54 @@
 @font-face {
-    font-family: font;
+    font-family: font-italic;
     src: url(CooperHewitt-LightItalic.woff);
 }
 
 .main {
-    font-family: font;
+    font-family: font-italic;
     background-image: url('background.JPG');
 }
 
 .title {
-    color: white;
-    font-family: font;
-    font-size: 48px;
+    font-family: font-italic;
+    color: #000d31;
+    font-size: 54px;
 }
 
 .preface {
+    color: white;
     font-family: font;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .chomsky {
     font-family: font;
-    font-size: 18px
+    font-size: 42px;
+    overflow: auto;
+    resize: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    color: #000d31;
+}
+
+.mybutton {
+    font-family: font-italic;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffeead;
+    color: black;
+    border-radius: 20px;
+}
+
+.div-border {
+    padding-left: 400px;
+    padding-right: 400px;
 }
