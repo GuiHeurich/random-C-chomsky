@@ -3,31 +3,74 @@
     src: url(CooperHewitt-LightItalic.woff);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .main {
     font-family: font-italic;
     background-image: url('background.JPG');
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
 .title {
     font-family: font-italic;
     color: #000d31;
-    font-size: 54px;
+    font-size: 3em;
+    text-align: center;
 }
 
 .preface {
     color: white;
     font-family: font;
-    font-size: 24px;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .chomsky {
     font-family: font;
-    font-size: 42px;
-    overflow: auto;
-    resize: none;
+    font-size: 1.8em;
     outline: none;
     background: transparent;
-    color: white;
     text-align: center;
     border-top: 1px;
     border-bottom: 1px;
@@ -38,7 +81,7 @@
 
 .mybutton {
     font-family: font-italic;
-    font-size: 40px;
+    font-size: 1.6em;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -48,7 +91,28 @@
     border-radius: 20px;
 }
 
-.div-border {
-    padding-left: 400px;
-    padding-right: 400px;
+
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :#33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
 }
